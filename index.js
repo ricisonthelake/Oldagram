@@ -7,7 +7,7 @@ const posts = [
         post: "images/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
         likes: 21,
-       liked: false
+        liked: false
 
     },
     {
@@ -119,11 +119,8 @@ let addComment = (i) => {
 }
 
 function shareThePage() {
-    // let shareUrl = window.location.href;
-    // window.location.href = ('mailto:riconthelake@gmail.com?body=shareUrl.value');
-    // console.log(shareUrl);
 
-let addr = prompt("what is the email address: ")
+    let addr = prompt("what is the email address: ")
 
-    window.location.assign("mailto:?Subject=Check This Out&body=http://thispage.com");
+    window.location.assign("mailto:?Subject=Check This Out&body=http://https://dev.to/imluka/the-only-markdown-cheatsheet-you-will-ever-need-ccg");
 }
