@@ -12,3 +12,7 @@ Scrimba Frontend Developer Career Path - Module 4
 
 1. Use JavaScript to render out all three posts
 2. Increase the likes when double clicking the post
+
+## Description
+
+This app displays a series of posts, not unlike facebook. The posts contain a user id, an avatar, and user interactions (likes, comments and shares)
