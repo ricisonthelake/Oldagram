@@ -1,0 +1,209 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+    /* colors */
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+
+    /* font-sizes */
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+}
+
+@media (min-width: 35em) {
+    :root {
+        --fs-800: 5rem;
+        --fs-700: 2.5rem;
+        --fs-600: 1.5rem;
+        --fs-500: 1.25rem;
+        --fs-400: 1rem;
+    }
+}
+
+@media (min-width: 45em) {
+    :root {
+        /* font-sizes */
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+    }
+}
+
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+body {
+    background: #EDEDED;
+}
+
+.container {
+    margin: auto;
+    width: 23.4375rem;
+    background: #fff;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 23.4375rem;
+    height: 4.1875rem;
+    align-items: center;
+    padding: 0 1rem;
+    border-bottom: solid 1px #C6C6C6;
+}
+
+.oldagram-logo {
+    width: 7.9375rem;
+    height: 2.125rem;
+}
+
+.my-avatar {
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    /* width: 375px; */
+    height: 4.1875rem;
+    padding: 1rem 1.7rem 1.1rem 1rem;
+    /* border-bottom: solid 1px #C6C6C6; */
+}
+
+.user-avatar {
+    display: flex;
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50%;
+}
+
+.user-information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.7rem;
+    line-height: 1.1rem;
+}
+
+.user-full-name {
+    font-weight: 700;
+    margin: 0;
+}
+.username {
+    font-weight: 700;
+}
+.comment {
+    font-weight: 400;
+}
+
+.user-location-text {
+font-size: .8rem;
+}
+
+.post-image {
+    width: 100%;
+}
+.post-body {
+    padding: 0 1.3rem 1rem;
+    border-bottom: 1.6rem solid #EDEDED;
+}
+.icons {
+    display: flex;
+    width: 6.0rem;
+    justify-content: space-between;
+    margin: 1rem 0 1rem ;
+}
+
+.icon {
+    width: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.icon:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
