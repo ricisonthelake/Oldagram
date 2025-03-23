@@ -122,5 +122,5 @@ function shareThePage() {
 
     let addr = prompt("what is the email address: ")
 
-    window.location.assign(`mailto:${addr}?Subject=Check This Out&body=https://oldagram-4b7ef1.netlify.app/`);
+    window.location.assign(`mailto:${addr}?Subject=Check This Out&body=https://oldagram-8e0c95.netlify.app/`);
 }
